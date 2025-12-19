@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Capacitación - Universidad de Panamá</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        .module-card {
+            transition: all 0.3s ease;
+        }
+        .module-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-12 px-4 shadow-lg">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex items-center justify-between flex-wrap gap-4">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-2">DSA Capacitación</h1>
+                    <p class="text-xl opacity-90">Dirección de Servicios Administrativos</p>
+                    <p class="text-sm opacity-75 mt-1">Universidad de Panamá</p>
+                </div>
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-lg p-4">
+                    <p class="text-sm font-semibold">📚 Plataforma de Formación</p>
+                    <p class="text-xs opacity-90 mt-1">Simulaciones Interactivas</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <!-- Welcome Section -->
+        <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">¡Bienvenido a la Plataforma de Capacitación!</h2>
+            <p class="text-gray-600 mb-4">
+                Esta plataforma contiene simulaciones interactivas diseñadas para capacitar al personal de las 
+                Unidades Gestoras (UG) en el uso del sistema DSA Gestiona Documental.
+            </p>
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+                <p class="text-sm text-blue-900">
+                    <strong>💡 Instrucciones:</strong> Selecciona el módulo que deseas estudiar. Cada simulación 
+                    es interactiva y te permitirá practicar los procesos paso a paso.
+                </p>
+            </div>
+        </div>
+
+        <!-- DSA Gestiona Documental Section -->
+        <section class="mb-12">
+            <div class="flex items-center mb-6">
+                <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-bold">DSA Gestiona Documental</h2>
+                    <p class="text-sm opacity-90">Sistema de Trazabilidad y Gestión de Expedientes</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Módulo 1 -->
+                <a href="modulo1.html" class="module-card bg-white rounded-lg shadow-lg p-6 border-t-4 border-blue-600 hover:border-blue-700 block">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="bg-blue-100 text-blue-600 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">
+                            1
+                        </div>
+                        <span class="bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">
+                            Disponible
+                        </span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Introducción y Fundamentos</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Propósito del sistema, inicio de sesión y gestión de perfil de usuario.
+                    </p>
+                    <div class="flex items-center text-blue-600 text-sm font-semibold">
+                        Iniciar módulo
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Módulo 2 -->
+                <div class="module-card bg-white rounded-lg shadow-lg p-6 border-t-4 border-gray-300 opacity-60">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="bg-gray-100 text-gray-400 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">
+                            2
+                        </div>
+                        <span class="bg-yellow-100 text-yellow-700 text-xs font-semibold px-3 py-1 rounded-full">
+                            Próximamente
+                        </span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Navegación e Interfaz</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Panel de Unidad Gestora, dashboards y notificaciones del sistema.
+                    </p>
+                    <div class="flex items-center text-gray-400 text-sm font-semibold">
+                        Próximamente
+                    </div>
+                </div>
+
+                <!-- Módulo 3 -->
+                <div class="module-card bg-white rounded-lg shadow-lg p-6 border-t-4 border-gray-300 opacity-60">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="bg-gray-100 text-gray-400 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">
+                            3
+                        </div>
+                        <span class="bg-yellow-100 text-yellow-700 text-xs font-semibold px-3 py-1 rounded-full">
+                            Próximamente
+                        </span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Creación de Solicitudes</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Proceso completo para crear solicitudes de bienes, servicios y obras.
+                    </p>
+                    <div class="flex items-center text-gray-400 text-sm font-semibold">
+                        Próximamente
+                    </div>
+                </div>
+
+                <!-- Módulo 4 -->
+                <div class="module-card bg-white rounded-lg shadow-lg p-6 border-t-4 border-gray-300 opacity-60">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="bg-gray-100 text-gray-400 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">
+                            4
+                        </div>
+                        <span class="bg-yellow-100 text-yellow-700 text-xs font-semibold px-3 py-1 rounded-full">
+                            Próximamente
+                        </span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Gestión de Expedientes</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Acciones clave: asignación, subir archivos, revisión y aprobación.
+                    </p>
+                    <div class="flex items-center text-gray-400 text-sm font-semibold">
+                        Próximamente
+                    </div>
+                </div>
+
+                <!-- Módulo 5 -->
+                <div class="module-card bg-white rounded-lg shadow-lg p-6 border-t-4 border-gray-300 opacity-60">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="bg-gray-100 text-gray-400 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">
+                            5
+                        </div>
+                        <span class="bg-yellow-100 text-yellow-700 text-xs font-semibold px-3 py-1 rounded-full">
+                            Próximamente
+                        </span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Roles Específicos UG</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Funciones del Autorizante, Supervisor y gestión de rutas.
+                    </p>
+                    <div class="flex items-center text-gray-400 text-sm font-semibold">
+                        Próximamente
+                    </div>
+                </div>
+
+                <!-- Módulo 6 -->
+                <div class="module-card bg-white rounded-lg shadow-lg p-6 border-t-4 border-gray-300 opacity-60">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="bg-gray-100 text-gray-400 w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg">
+                            6
+                        </div>
+                        <span class="bg-yellow-100 text-yellow-700 text-xs font-semibold px-3 py-1 rounded-full">
+                            Próximamente
+                        </span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Herramientas Adicionales</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Búsqueda avanzada, botón de opciones y glosario de términos.
+                    </p>
+                    <div class="flex items-center text-gray-400 text-sm font-semibold">
+                        Próximamente
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress Tracker -->
+        <div class="bg-white rounded-lg shadow-lg p-8">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Tu Progreso</h3>
+            <div class="flex items-center justify-between mb-2">
+                <span class="text-gray-600">Módulos completados</span>
+                <span class="text-2xl font-bold text-blue-600">0/6</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-3">
+                <div class="bg-gradient-to-r from-blue-600 to-purple-600 h-3 rounded-full" style="width: 0%"></div>
+            </div>
+            <p class="text-sm text-gray-500 mt-3">
+                💡 Completa todos los módulos para dominar el sistema DSA Gestiona
+            </p>
+        </div>
+
+        <!-- Additional Resources -->
+        <div class="mt-12 bg-gradient-to-r from-purple-100 to-blue-100 rounded-lg p-8 border border-purple-200">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">📚 Recursos Adicionales</h3>
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="bg-white rounded-lg p-4 shadow">
+                    <div class="text-2xl mb-2">📖</div>
+                    <h4 class="font-semibold text-gray-800 mb-1">Manual Completo</h4>
+                    <p class="text-sm text-gray-600">Descarga el manual DSA Gestiona en PDF</p>
+                </div>
+                <div class="bg-white rounded-lg p-4 shadow">
+                    <div class="text-2xl mb-2">❓</div>
+                    <h4 class="font-semibold text-gray-800 mb-1">Preguntas Frecuentes</h4>
+                    <p class="text-sm text-gray-600">Consulta las dudas más comunes</p>
+                </div>
+                <div class="bg-white rounded-lg p-4 shadow">
+                    <div class="text-2xl mb-2">💬</div>
+                    <h4 class="font-semibold text-gray-800 mb-1">Soporte Técnico</h4>
+                    <p class="text-sm text-gray-600">Contacta al equipo de DSA para ayuda</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4 mt-12">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="mb-2">© 2024 Universidad de Panamá - Dirección de Servicios Administrativos</p>
+            <p class="text-sm text-gray-400">Plataforma de Capacitación DSA Gestiona Documental</p>
+        </div>
+    </footer>
+</body>
+</html>
