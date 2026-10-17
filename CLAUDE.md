@@ -28,7 +28,7 @@ Los módulos 2 al 6 aparecen en la portada como tarjetas grises «Próximamente�
 - **Misma estructura que `modulo1.html`:** cabecera con título y barra de progreso, indicadores circulares de pasos, un `div.step-content` por paso con `data-step="N"`, botones Anterior/Siguiente y pie de página.
 - **Navegación por pasos:** el script usa `currentStep`, `totalSteps`, `updateUI()`, `nextStep()` y `prevStep()`. Al cambiar el número de pasos, actualiza `totalSteps`, los indicadores `indicator-N` y el texto «Paso X de N».
 - **Estilo:** solo clases de Tailwind. Azul (`blue-600`) como color principal, morado como secundario en degradados, verde para completado, fondo `from-blue-50 to-purple-50`.
-- **Tono:** claro y directo, tratando al usuario de «usted» en los textos de ayuda, como en `modulo1.html`.
+- **Tono:** claro y directo. El tratamiento hoy es mixto: la portada tutea («Selecciona», «Completa») y `modulo1.html` usa la forma formal («Ingrese», «complete»). Decidir una sola forma para todo el sitio y aplicarla al crear nuevos módulos.
 - **Un módulo termina con** un resumen y una verificación de conocimientos.
 
 ## Pendientes conocidos
@@ -38,6 +38,7 @@ Los módulos 2 al 6 aparecen en la portada como tarjetas grises «Próximamente�
 - El inicio de sesión de `modulo1.html` es una demostración: usa `alert()` y no valida nada. No pedir ni guardar credenciales reales.
 - El pie de página dice «© 2024».
 - «Manual Completo», «Preguntas Frecuentes» y «Soporte Técnico» en la portada son tarjetas sin enlace.
+- El tratamiento (tú o usted) es inconsistente entre la portada y el módulo 1.
 
 ## Cómo trabajar aquí
 
